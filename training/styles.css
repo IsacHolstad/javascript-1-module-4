@@ -1,0 +1,26 @@
+body {
+  background-color: blue;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.h1 {
+  position: absolute;
+  justify-content: center;
+  top: 50px;
+  text-align: center;
+  width: 400px;
+  left: 25%;
+  height: 200px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 5px;
+}
+.img {
+  position: relative;
+
+  width: 100%;
+  height: 600px;
+}

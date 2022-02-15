@@ -21,13 +21,13 @@ body {
 .team {
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid;
+  border: 1px solid grey;
   border-radius: 0.7rem;
   min-width: 200px;
   position: relative;
   background-color: rgb(4, 20, 70);
   color: white;
-  box-shadow: 2px 2px 2px rgb(0, 0, 0);
+  box-shadow: 3px 5px 5px rgb(0, 0, 0);
 }
 
 .search {
