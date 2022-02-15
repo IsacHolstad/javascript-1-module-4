@@ -37,14 +37,24 @@ async function makeApiCall() {
 
         const results = await response.json();
 
-        console.log(results);
+        //console.log(results);
 
         //TODO we will make a for loop here to loop on the results
+        for(let i = 0; i < results.length; i++) {
+            //console.log(results[i])
+            if(!results[i].name && !results[i].image)
+            //i want to create a div for the name and a div for the img
+            resultsContainer += `
+            <div class="card">
+            <h1>${results[i].name}</h1>
+            <img src="${results[i].image}" alt="${results[i].name}"/></div>`
+
+        }
 
 
     } catch (error) {
-        console.log(error);
-        resultsContainer.innerHTML = message("error", error);
+        //console.log(error);
+        //resultsContainer.innerHTML = message("error", error);
     }
 }
 

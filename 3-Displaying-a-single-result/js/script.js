@@ -13,10 +13,35 @@ const container = document.querySelector(".container");
 
 const url = "https://api.rawg.io/api/games/4200?key=54582cd735a340b89b17702eae51578b";
 
-async function fetchGame() {
+async function fetchGame(details) {
 
     try {
         const response = await fetch(url);
+        const details = await response.json();
+        console.log(createHTML)
+        //name 
+        //image background
+        //descripton
+        //realse Date
+        container.innerHTML += `
+        <h1>Name: ${details.name}</h1>
+        <div class="details-image" style="background-image: url('${details.backgroundimage}')"></div>
+        <p class="details-description">description: ${details.description_raw}</p>
+        <time class="detials-date">Released: ${details.released}</time>
+
+        `
+        //fetchGame();
+        function createHTML(details) {
+            container.innerHTML += `
+        <h1>Name: ${details.name}</h1>
+        <div class="details-image" style="background-image: url('${details.backgroundimage}')"></div>
+        <p class="details-description">description: ${details.description_raw}</p>
+        <time class="detials-date">Released: ${details.released}</time>
+
+        `
+
+        }
+
 
 
     } catch (error) {
