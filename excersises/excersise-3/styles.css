@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(214, 214, 214);
+}
+.circel {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px 2px rgb(0, 0, 0);
+}
+
+#circleBTN {
+  border-radius: 7px;
+  padding: 25px;
+  border: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 25px;
+  margin: 50px;
+  background-color: lightgray;
+  border: 1px solid darkgray;
+  box-shadow: 2px 2px 2px;
+  cursor: pointer;
+}
+.wrapper {
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+  flex-direction: column;
+}
